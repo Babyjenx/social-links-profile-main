@@ -1,0 +1,114 @@
+/* 1. Use a more-intuitive box-sizing model */
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  /* 2. Remove default margin */
+  * {
+    margin: 0;
+  }
+  body {
+    /* 3. Add accessible line-height */
+    line-height: 1.5;
+    /* 4. Improve text rendering */
+    -webkit-font-smoothing: antialiased;
+  }
+  /* 5. Improve media defaults */
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  /* 6. Inherit fonts for form controls */
+  input, button, textarea, select {
+    font: inherit;
+  }
+  /* 7. Avoid text overflows */
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  /* 8. Improve line wrapping */
+  p {
+    text-wrap: pretty;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    text-wrap: balance;
+  }
+  /*
+    9. Create a root stacking context
+  */
+  #root, #__next {
+    isolation: isolate;
+  }
+
+/*Start of My CSS*/
+
+@font-face {
+    font-family: "Inter" ;
+    src: url(Inter-VariableFont_slnt\,wght.ttf);
+}
+
+* {
+   font-family: "Inter"; 
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: hsl(0, 0%, 8%);
+}
+
+.social-links-card {
+    background-color: hsl(0, 0%, 12%);
+    color: white;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 10px;
+    padding-bottom: 20px;
+
+}
+
+.profile-name {
+    font-weight: bold;
+}
+
+.profile-location {
+    color: hsl(75, 94%, 57%);
+    font-size: .6rem;
+    font-weight: bold;
+    padding: 5px;
+}
+
+.profile-quote {
+    font-size: .6rem;
+    padding: 10px;
+}
+
+.profile-picture {
+    margin: 20px auto;
+    max-width: 65px;
+    border-radius: 50%;
+    
+}
+
+.profile-picture img {
+    border-radius: 50%;
+}
+
+button {
+    background-color: hsl(0, 0%, 20%);
+    border: none;
+    margin: 5px 30px;
+    min-height: 30px;
+    color: white;
+    font-size: .6rem ;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: hsl(75, 94%, 57%);
+    color: black;
+    cursor: pointer;
+}
